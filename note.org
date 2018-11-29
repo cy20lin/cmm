@@ -1,0 +1,24 @@
+# a basic directory transformation object
+#+BEGIN_SRC javascript
+  var object = {
+      defaultConfig:{},
+      name="git-clone",
+      description="simply clone git meta info directory",
+      version="1.2",
+      inplace=true,
+      verifyConfig: function(config){
+          return true;
+      },
+      isSourceDirectoryGoodToUse: function(src, config, meta) {
+          return true;
+      },
+      updateDiectory: function(dst, config, metaInfo, src){
+        // 
+      },
+      directoryState: function(dst, config, metaInfo) {
+        // return "OCCUPIED" | "EMPTY" | "UP_TO_DATE" | "UPDATE_NEEDED"
+      },
+      envDependencies
+  };
+  module.exports = object;
+#+END_SRC

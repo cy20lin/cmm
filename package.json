@@ -9,9 +9,14 @@
     "author": "Chien-Yu Lin",
     "license": "ISC",
     "dependencies": {
+        "crypto-js": "^3.1.9-1",
         "decompress": "^4.2.0",
+        "empty-dir": "^1.0.0",
+        "folder-hash": "^2.1.2",
         "fs-extra": "^7.0.1",
-        "shelljs": "^0.8.3",
+        "lodash": "^4.17.11",
+        "semver": "^5.6.0",
+        "tmp": "0.0.33",
         "yargs": "^12.0.4"
     },
     "bin": {

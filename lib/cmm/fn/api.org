@@ -1,0 +1,24 @@
+a class has foll
+
+Transformer t;
+
+class Transformer {
+  enum class State {
+    ready = 0,
+    update_needed,
+    invalid,
+  }
+  bool is_inplace();
+  State source_directory_state();
+  State destination_directory_state();
+  bool transform();
+}
+
+dst_state = t.destination_directory_state(dst);
+if (dst_state == "ready")
+  return true;
+if (dst_state == "invalid")  
+  return false;
+if (dst_state == "update_needed")
+  
+
